@@ -1,15 +1,35 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1, h2, p {
-    color: rgba(255, 255, 255, 0.911);
+@font-face {
+  font-family: 'Roxborough CF';
+  src: local('Roxborough CF'),
+    url('./fonts/Roxborough CF.ttf') format('truetype');
+}
+
+h1,
+p,
+a {
+  color: rgba(255, 255, 255, 0.911);
+  font-family: 'Roxborough CF', sans-serif;
 }
 
 body {
-    background-color: #2f3433;
+  height: 100vh;
+  background-color: #2f3433;
+}
+
+body {
+  background-image: url('../img/forme1_left.svg'), url('../img/forme2.svg'),
+    url('../img/forme3.svg');
+  background-repeat: no-repeat;
+  background-position: center -10rem, left center, right center;
+  background-size: 70%, 30%, 30%;
 }
 
 @import './home';
+@import './navbar';
+@import './about';

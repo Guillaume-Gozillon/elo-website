@@ -1,0 +1,24 @@
+nav {
+  padding-top: 5rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  & a {
+    padding: 1rem 1.5rem;
+    font-size: 1.7rem;
+    text-decoration: none;
+    border: white solid 0.1rem;
+    &:hover {
+      transition: all .3s;
+      background: white;
+      color: #42088d;
+    }
+  }
+  & .empty {
+    padding: 2rem;
+    border: white solid 0.1rem;
+  }
+  & .middle {
+    padding: 0 7rem;
+  }
+}
