@@ -1,0 +1,18 @@
+body {
+  padding-top: 6rem;
+  height: 100vh;
+  background-color: #2f3433;
+  background-image: url('../img/grey-blue-shape.svg'),
+    url('../img/full-blue-shape.svg'), url('../img/circle.svg'),
+    url('../img/goutte.svg');
+  background-repeat: no-repeat;
+  background-position: 55% -18vw, 25% 60vh, 70vw center, left 15%;
+  background-size: 25%, 25%, 20rem, 20rem;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    background-size: 90%, 30%, 20rem;
+    background-position: 205% -22vw, left 30%, 80% center;
+  }
+}

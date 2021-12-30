@@ -1,14 +1,19 @@
 nav {
-  padding-top: 5rem;
   display: flex;
   width: 100%;
   justify-content: center;
+  border-top: white 1px solid;
+  border-bottom: white 1px solid;
+  backdrop-filter: blur(9.7px);
+  -webkit-backdrop-filter: blur(9.7px);
+  position: fixed;
   & a {
-    padding: 1rem 1.5rem;
-    font-size: 1.7rem;
+    padding: 1.2rem 2.2rem;
+    font-size: 1.5rem;
     text-decoration: none;
-    border: white solid 0.1rem;
     transition: all 0.3s;
+    border-left: white 1px solid;
+    border-right: white 1px solid;
     &:hover {
       background: white;
       color: #42088d;
@@ -16,7 +21,6 @@ nav {
   }
   & .empty {
     padding: 2rem;
-    border: white solid 0.1rem;
   }
   & .middle {
     padding: 0 7rem;
@@ -26,4 +30,10 @@ nav {
 .active {
   color: #42088d;
   background: white;
+}
+
+@media screen and (max-width: 800px) {
+  nav {
+    flex-direction: column;
+  }
 }

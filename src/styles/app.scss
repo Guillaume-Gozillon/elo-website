@@ -17,14 +17,9 @@ a {
   font-family: 'Roxborough CF', sans-serif;
 }
 
-body {
-  height: 100vh;
-  background-color: #2f3433;
-  background-image: url('../img/forme1_left.svg'), url('../img/forme2.svg'),
-    url('../img/testsvg.svg');
-  background-repeat: no-repeat;
-  background-position: center -10rem, left 30%, 80% center;
-  background-size: 70%, 30%, 20rem;
+.container {
+  height: 80vh;
+  padding: 0 18%;
 }
 
 @import './home';
@@ -32,3 +27,4 @@ body {
 @import './services';
 @import './newsletter';
 @import './footer';
+@import './background';
