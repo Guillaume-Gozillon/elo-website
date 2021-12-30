@@ -6,16 +6,23 @@
   border-top: white 1px solid;
   border-bottom: white 1px solid;
   cursor: pointer;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 }
 
 .txt {
   color: white;
   white-space: nowrap;
-  font-size: 3rem;
+  font-size: 2.1rem;
   animation: scrollTxt 15s linear infinite;
   font-weight: 300;
-  padding: .7rem;
+  padding: 0.7rem;
+}
+
+.line {
+  height: 1px;
+  border-top: white 1px solid;
+  width: 100%;
+  margin-bottom: 2rem;
 }
 
 @keyframes scrollTxt {
@@ -24,6 +31,12 @@
   }
   100% {
     transform: translate(-100%, 0);
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .txt {
+    font-size: 1.75rem;
   }
 }
 

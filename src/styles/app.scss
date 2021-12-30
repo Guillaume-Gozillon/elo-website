@@ -22,9 +22,15 @@ a {
   padding: 0 18%;
 }
 
+@media screen and (max-width: 1460px) {
+  .container {
+    padding: 0 7%;
+  }
+}
+
 @import './home';
 @import './navbar';
-@import './services';
+@import './content';
 @import './newsletter';
 @import './footer';
 @import './background';

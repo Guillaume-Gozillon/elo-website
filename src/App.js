@@ -23,6 +23,7 @@ const App = () => {
         </Routes>
       </div>
       <Newsletter />
+      <div className='line'></div>
       <Footer />
     </>
   )

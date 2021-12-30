@@ -16,6 +16,7 @@ const NavBar = () => {
         setToggleMenu(false)
       }
     }
+
     window.addEventListener('resize', changeWidth)
     return () => {
       window.removeEventListener('resize', changeWidth)
@@ -23,7 +24,7 @@ const NavBar = () => {
   }, [])
 
   return (
-    <nav>
+    <nav activeclassname='open'>
       {(toggleMenu || largeur > 800) && (
         <>
           <NavLink onClick={closeToggle} to='/'>
@@ -32,7 +33,9 @@ const NavBar = () => {
           <NavLink onClick={closeToggle} to='/about'>
             ABOUT
           </NavLink>
-          <div className='empty middle'></div>
+          {(toggleMenu || largeur > 1140) && (
+            <div className='empty middle'></div>
+          )}
           <NavLink
             onClick={closeToggle}
             activeclassname='active'
@@ -53,9 +56,14 @@ const NavBar = () => {
         </>
       )}
       {largeur < 800 && (
-        <button onClick={toggleNavSmallScreen} className='btn'>
-          BTN
-        </button>
+        // <button onClick={toggleNavSmallScreen} className='btn'>
+        //   BTN
+        // </button>
+        <div onClick={toggleNavSmallScreen} className='hamburger'>
+          <div className='hamburger-line'></div>
+          <div className='hamburger-line'></div>
+          <div className='hamburger-line'></div>
+        </div>
       )}
     </nav>
   )

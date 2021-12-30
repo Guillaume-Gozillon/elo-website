@@ -6,13 +6,22 @@ body {
     url('../img/full-blue-shape.svg'), url('../img/circle.svg'),
     url('../img/goutte.svg');
   background-repeat: no-repeat;
-  background-position: 55% -18vw, 25% 60vh, 70vw center, left 15%;
-  background-size: 25%, 25%, 20rem, 20rem;
+  background-size: 27rem, 23rem, 20rem, 20rem;
+  background-position: 40vw -18rem, 23vw 42rem, 76vw center, -5vw 6rem;
+}
+
+@media screen and (max-width: 1200px) {
+  body {
+    background-size: 24rem, 24rem, 20vw, 13rem;
+    background-position: 40vw -18rem, 25vw 65vh, 75vw center, -4vw 14vh;
+  }
 }
 
 @media screen and (max-width: 800px) {
   body {
-    background-size: 90%, 30%, 20rem;
-    background-position: 205% -22vw, left 30%, 80% center;
+    background-image: url('../img/full-blue-shape.svg'),
+      url('../img/circle.svg');
+    background-size: 24rem, 45vw;
+    background-position: 25vw 65vh, 46vw 9vh;
   }
 }

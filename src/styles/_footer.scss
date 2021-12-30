@@ -2,7 +2,16 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 2rem;
   & a {
+    font-size: 1.3rem;
+    font-family: 'Gemunu Libre', sans-serif;
     padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  footer {
+    flex-direction: column;
   }
 }
