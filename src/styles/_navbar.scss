@@ -8,8 +8,8 @@ nav {
     font-size: 1.7rem;
     text-decoration: none;
     border: white solid 0.1rem;
+    transition: all 0.3s;
     &:hover {
-      transition: all 0.3s;
       background: white;
       color: #42088d;
     }
