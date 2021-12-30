@@ -1,0 +1,32 @@
+.container-newsletter {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  transform: translateY(-50%);
+  border-top: white 1px solid;
+  border-bottom: white 1px solid;
+}
+
+.txt {
+  color: white;
+  white-space: nowrap;
+  font-size: 3rem;
+  animation: scrollTxt 15s linear infinite;
+  font-weight: 300;
+  padding: .7rem;
+}
+
+@keyframes scrollTxt {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .txt {
+    font-size: 1.2rem;
+  }
+}

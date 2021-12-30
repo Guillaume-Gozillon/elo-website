@@ -1,0 +1,17 @@
+.main-content {
+  height: 60vh;
+  padding-top: 6rem;
+  margin-left: 12rem;
+}
+
+.content {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 2.5rem;
+  font-weight: 300;
+  font-family: 'Gemunu Libre', sans-serif;
+  line-height: 4rem;
+  &.bold {
+    font-weight: 700;
+  }
+}

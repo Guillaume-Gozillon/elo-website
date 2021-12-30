@@ -9,7 +9,7 @@ nav {
     text-decoration: none;
     border: white solid 0.1rem;
     &:hover {
-      transition: all .3s;
+      transition: all 0.3s;
       background: white;
       color: #42088d;
     }
@@ -21,4 +21,9 @@ nav {
   & .middle {
     padding: 0 7rem;
   }
+}
+
+.active {
+  color: #42088d;
+  background: white;
 }
