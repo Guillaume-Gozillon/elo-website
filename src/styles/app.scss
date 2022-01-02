@@ -27,6 +27,17 @@ a {
     padding: 0 7%;
   }
 }
+@media screen and (max-width: 450px) {
+  .container {
+    height: 85vh;
+    padding: 1rem 7%;
+  }
+}
+@media screen and (max-width: 330px) {
+  .container {
+    height: 95vh;
+  }
+}
 
 @import './home';
 @import './navbar';

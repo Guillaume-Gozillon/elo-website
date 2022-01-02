@@ -91,3 +91,9 @@ nav {
   }
 }
 
+@media screen and (max-width: 330px) {
+  nav {
+    clip-path: circle(50px at 90% -10%);
+    -webkit-clip-path: circle(50px at 10% -10%);
+  }
+}
