@@ -40,44 +40,53 @@ nav {
 
 @media screen and (max-width: 800px) {
   nav {
+    position: fixed;
     flex-direction: column;
+    background-color: black;
+    border: none;
+    clip-path: circle(80px at 90% -10%);
+    -webkit-clip-path: circle(80px at 10% -10%);
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    transition: all 1s ease;
+    & a {
+      border: none;
+    }
+  }
+  .open {
+    height: 100vh;
+    top: 0;
+    clip-path: circle(125vh at 90% -10%);
+    -webkit-clip-path: circle(125vh at 10% -10%);
   }
 }
-
-// tetstestegses
 
 @media screen and (max-width: 800px) {
   .hamburger-line {
     width: 30px;
+    background: #42088d;
+    margin: 3px;
     height: 3px;
-    background: white;
-    margin: 5px;
   }
 
   .hamburger {
-    position: absolute;
+    justify-content: center;
+    position: fixed;
+    background: white;
+    display: flex;
+    flex-direction: column;
     cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
     left: 5%;
-    top: 50%;
+    top: 6%;
     transform: translate(-5%, -50%);
     z-index: 2;
-  }
-
-  .active {
-    position: fixed;
-    background: #5b78c7;
-    height: 100vh;
-    width: 100%;
-    flex-direction: column;
-    clip-path: circle(100px at 10% -10%);
-    -webkit-clip-path: circle(100px at 10% -10%);
-    transition: all 1s ease-out;
-    pointer-events: none;
-  }
-
-  .open {
-    clip-path: circle(1000px at 90% -10%);
-    -webkit-clip-path: circle(1000px at 90% -10%);
-    pointer-events: all;
+    align-items: center;
+    &:hover {
+      background: darken($color: #000000, $amount: 0);
+    }
   }
 }

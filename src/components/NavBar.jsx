@@ -24,48 +24,51 @@ const NavBar = () => {
   }, [])
 
   return (
-    <nav activeclassname='open'>
-      {(toggleMenu || largeur > 800) && (
-        <>
-          <NavLink onClick={closeToggle} to='/'>
-            HOME
-          </NavLink>
-          <NavLink onClick={closeToggle} to='/about'>
-            ABOUT
-          </NavLink>
-          {(toggleMenu || largeur > 1140) && (
-            <div className='empty middle'></div>
-          )}
-          <NavLink
-            onClick={closeToggle}
-            activeclassname='active'
-            to='/services'
-          >
-            SERVICES
-          </NavLink>
-          <NavLink
-            onClick={closeToggle}
-            activeclassname='active'
-            to='/projects'
-          >
-            PROJECTS
-          </NavLink>
-          <NavLink onClick={closeToggle} activeclassname='active' to='/contact'>
-            CONTACT
-          </NavLink>
-        </>
-      )}
+    <>
       {largeur < 800 && (
-        // <button onClick={toggleNavSmallScreen} className='btn'>
-        //   BTN
-        // </button>
         <div onClick={toggleNavSmallScreen} className='hamburger'>
           <div className='hamburger-line'></div>
           <div className='hamburger-line'></div>
           <div className='hamburger-line'></div>
         </div>
       )}
-    </nav>
+      <nav className={toggleMenu ? 'open' : null}>
+        {(toggleMenu || largeur > 800) && (
+          <>
+            <NavLink onClick={closeToggle} to='/'>
+              HOME
+            </NavLink>
+            <NavLink onClick={closeToggle} to='/about'>
+              ABOUT
+            </NavLink>
+            {(toggleMenu || largeur > 1140) && (
+              <div className='empty middle'></div>
+            )}
+            <NavLink
+              onClick={closeToggle}
+              activeclassname='active'
+              to='/services'
+            >
+              SERVICES
+            </NavLink>
+            <NavLink
+              onClick={closeToggle}
+              activeclassname='active'
+              to='/projects'
+            >
+              PROJECTS
+            </NavLink>
+            <NavLink
+              onClick={closeToggle}
+              activeclassname='active'
+              to='/contact'
+            >
+              CONTACT
+            </NavLink>
+          </>
+        )}
+      </nav>
+    </>
   )
 }
 
