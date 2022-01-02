@@ -27,9 +27,9 @@ const NavBar = () => {
     <>
       {largeur < 800 && (
         <div onClick={toggleNavSmallScreen} className='hamburger'>
-          <div className='hamburger-line'></div>
-          <div className='hamburger-line'></div>
-          <div className='hamburger-line'></div>
+          <span className='hamburger-line'></span>
+          <span className='hamburger-line'></span>
+          <span className='hamburger-line'></span>
         </div>
       )}
       <nav className={toggleMenu ? 'open' : null}>
