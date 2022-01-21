@@ -3,7 +3,7 @@ body {
   height: 100vh;
   background-color: #2f3433;
   background-image: url('../img/grey-blue-shape.svg'),
-    url('../img/full-blue-shape.svg'), url('../img/circle.svg'),
+    url('../img/grey-blue-shape.svg'), url('../img/circle.svg'),
     url('../img/goutte.svg');
   background-repeat: no-repeat;
   background-size: 27rem, 23rem, 20rem, 20rem;
@@ -19,7 +19,7 @@ body {
 
 @media screen and (max-width: 800px) {
   body {
-    background-image: url('../img/full-blue-shape.svg'),
+    background-image: url('../img/grey-blue-shape.svg'),
       url('../img/circle.svg');
     background-size: 24rem, 45vw;
     background-position: 25vw 65vh, 46vw 9vh;

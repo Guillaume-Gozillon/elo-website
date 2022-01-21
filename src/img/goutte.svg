@@ -4,7 +4,10 @@
     <g id="Plan-de-travail1" serif:id="Plan de travail1" transform="matrix(0.977732,0,0,0.858073,-2.81038,-3.23187)">
         <rect x="2.874" y="3.766" width="191.678" height="146.31" style="fill:none;"/>
         <g transform="matrix(0.818468,0.698865,-0.613336,0.932603,63.3968,-77.2145)">
-            <path d="M3.6,96.2C0,114.6 99.3,165.8 150.4,126.4C201.5,87 200.9,26.6 150.4,13.3C99.9,0 106.9,52.2 77.3,67.3C47.7,82.4 9.4,66.6 3.6,96.2Z" style="fill:rgb(168,158,188);fill-rule:nonzero;"/>
+            <path d="M3.6,96.2C0,114.6 99.3,165.8 150.4,126.4C201.5,87 200.9,26.6 150.4,13.3C99.9,0 106.9,52.2 77.3,67.3C47.7,82.4 9.4,66.6 3.6,96.2Z" style="fill:url(#_Linear1);fill-rule:nonzero;"/>
         </g>
     </g>
+    <defs>
+        <linearGradient id="_Linear1" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-211.275,42.8673,-42.8676,-211.275,219.957,51.0379)"><stop offset="0" style="stop-color:white;stop-opacity:0.44"/><stop offset="1" style="stop-color:rgb(124,42,232);stop-opacity:0.79"/></linearGradient>
+    </defs>
 </svg>
