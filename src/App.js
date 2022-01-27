@@ -9,6 +9,8 @@ import About from './components/About'
 import Contact from './components/Contact'
 import Projects from './components/Projects'
 
+import { projects } from './data'
+
 const App = () => {
   return (
     <>
@@ -18,7 +20,7 @@ const App = () => {
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/services' element={<Services />} />
-          <Route path='/projects' element={<Projects />} />
+          <Route path='/projects' element={<Projects projects={projects} />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>
       </div>
